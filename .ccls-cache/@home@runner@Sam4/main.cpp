@@ -1,21 +1,20 @@
 #include <iostream>
-using namespace std;
 
 int main() {
   double A;
   int N;
-  cout << "Введіть дійсне число A: ";
-  cin >> A;
+  std::cout << "Введіть дійсне число A: ";
+  std::cin >> A;
   do {
-    cout << "Введіть ціле число N (більше 0): ";
-    cin >> N;
+    std::cout << "Введіть ціле число N (більше 0): ";
+    std::cin >> N;
   } while (N <= 0);
 
   double result = 1.0;
   for (int i = 0; i < N; i++) {
     result *= A;
   }
-  cout << A << " у степені " << N << " дорівнює " << result << endl;
+  std::cout << A << " у степені " << N << " дорівнює " << result << std::endl;
 
   return 0;
 }
